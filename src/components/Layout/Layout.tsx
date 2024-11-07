@@ -1,8 +1,9 @@
 import React, { ReactNode } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import useBuildingData from "../../utils/BuildingDataProvider";
 import "./Layout.css";
+
 const Layout: React.FC<{children:ReactNode}> = ({children}) => {
   const floorAccess = useSelector(
     (state: {
